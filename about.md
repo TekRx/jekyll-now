@@ -1,6 +1,5 @@
 ---
 permalink: /about/
 title: About
-redirect_to:
-  - https://www.tekrx.ca
+redirect_to: https://www.tekrx.ca
 ---
