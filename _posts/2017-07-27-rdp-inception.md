@@ -1,3 +1,8 @@
+---
+layout:post
+title: RDP Inception
+---
+
 # Tired of remote desktop-ception? Try this quick trick!
 
 ![Remote Desktop Inception](https://raw.githubusercontent.com/TekRx/blog/master/images/mainpic1.png)
