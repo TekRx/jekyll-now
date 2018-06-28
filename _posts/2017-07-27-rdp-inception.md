@@ -1,6 +1,6 @@
 ---
 layout:post
-title: RDP Inception
+title: Tired of remote desktop-ception? Try this quick trick!
 ---
 
 # Tired of remote desktop-ception? Try this quick trick!
