@@ -1,7 +1,9 @@
 ---
 layout: page
 title: About
-permalink: www.tekrx.ca
+permalink: /about/
+redirect_to:
+  - https://www.tekrx.ca
 ---
 
 ### Contact Us
