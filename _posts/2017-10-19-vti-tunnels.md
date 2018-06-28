@@ -5,7 +5,7 @@ tags: [ crypto, ipsec, security, vpn, tunneling ]
 img: /assets/oldwaynewway.png
 ---
 
-![oldnewway](/assets/oldwaynewway.jpg)
+![oldnewway](/assets/vti-oldwaynewway.jpg)
 
 One of our clients had ran into an interesting issue where they were unable to setup multiple GRE tunnels with IPSEC encryption to two different destinations while having the same source interface.
 
@@ -24,11 +24,12 @@ Although there are multiple options that we can use to resolve this issue, such 
 - Supports Unicast/Multicast traffic (Broadcast traffic supported with GRE over IPSEC)
 
 ## Comparison between Legacy and VTI:
+
 < insert comparison >
 
 #### Diagram for illustration:
 
-<insert image>
+![diagram](/assets/vti-diagram.png)
 
 ### Setup:
 
