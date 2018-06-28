@@ -6,7 +6,7 @@ tags: [ ssh, rdp, security, tunneling ]
 
 # Tired of remote desktop-ception? Try this quick trick!
 
-![Remote Desktop Inception](https://raw.githubusercontent.com/TekRx/blog/master/images/mainpic1.png)
+![Remote Desktop Inception](https://raw.githubusercontent.com/TekRx/tekrx.github.io/master/assets/tunnel0.png)
 
 A friend of mine was sharing about his experience of using remote desktop to connect to a server, then connecting to yet another server with remote desktop to access the information he needs. This is a silly way of connecting to the remote server and can be vulnerable to exploitation.
 
@@ -66,13 +66,13 @@ _This essentially forwards traffic going to your computer's local port 8000 to p
 ### Windows:
 1. Install your favourite SSH client (putty will be used for this guide)
 2. Type in ```hop1.server.com``` which is the first server that you Remote Desktop to
-![Windows1](https://raw.githubusercontent.com/TekRx/blog/master/images/tunnel1.png)
+![Windows1](https://raw.githubusercontent.com/TekRx/tekrx.github.io/master/assets/tunnel1.png)
 3. In the Category section, go to **Connections -> SSH -> Tunnels**
 4. Configure the settings as you see below 
   1. Source port: **8000**
   2. Destination: **destination-server:3389**
   3. Click **Add**
-![Windows2](https://raw.githubusercontent.com/TekRx/blog/master/images/tunnel2.png)
+![Windows2](https://raw.githubusercontent.com/TekRx/tekrx.github.io/master/assets/tunnel2.png)
 5. Go back to the Sessions and under Save Session type in "_Destination-server RDP_" and click **_Save_**
 6. Click Open and input your password for hop1.server
 7. Now try to open a Remote Desktop Connection to ```localhost:8000``` and you'll be on your encrypted way to access the Destination-Server with just one Remote Desktop Session.
