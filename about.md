@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: www.tekrx.ca
 ---
 
 Some information about you!
