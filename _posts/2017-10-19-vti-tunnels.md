@@ -37,7 +37,9 @@ Although there are multiple options that we can use to resolve this issue, such 
 - IPSec over GRE
 
 ### Crypto Configuration:
+
 ##### HUB1 (in VRF)
+
 ```
 crypto isakmp profile ISAKMP-Profile-Spoke1
    keyring KEYRING-SPOKE1
