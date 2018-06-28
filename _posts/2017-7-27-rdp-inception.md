@@ -1,6 +1,7 @@
 ---
-layout:post
+layout: post
 title: Tired of remote desktop-ception? Try this quick trick!
+date: 2017-7-27 12:00:00 -0500
 tags: [ ssh, rdp, security, tunneling ]
 ---
 
