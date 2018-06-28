@@ -4,6 +4,6 @@ title: About
 permalink: www.tekrx.ca
 ---
 
-### Contact me
+### Contact Us
 
 [contactus@tekrx.ca](mailto:contactus@tekrx.ca)
