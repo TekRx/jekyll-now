@@ -7,7 +7,7 @@ img: https://raw.githubusercontent.com/TekRx/tekrx.github.io/master/assets/tunne
 
 
 
-![oldnewway](/assets/acl_oldnewway.webp)
+![oldnewway](/assets/oldwaynewway.jpg)
 
 One of our clients had ran into an interesting issue where they were unable to setup multiple GRE tunnels with IPSEC encryption to two different destinations while having the same source interface.
 
