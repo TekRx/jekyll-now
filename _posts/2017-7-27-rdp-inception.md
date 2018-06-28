@@ -69,9 +69,9 @@ _This essentially forwards traffic going to your computer's local port 8000 to p
 ![Windows1](https://raw.githubusercontent.com/TekRx/tekrx.github.io/master/assets/tunnel1.png)
 3. In the Category section, go to **Connections -> SSH -> Tunnels**
 4. Configure the settings as you see below 
-  1. Source port: **8000**
-  2. Destination: **destination-server:3389**
-  3. Click **Add**
+    1. Source port: **8000**
+    1. Destination: **destination-server:3389**
+    1. Click **Add**
 ![Windows2](https://raw.githubusercontent.com/TekRx/tekrx.github.io/master/assets/tunnel2.png)
 5. Go back to the Sessions and under Save Session type in "_Destination-server RDP_" and click **_Save_**
 6. Click Open and input your password for hop1.server
