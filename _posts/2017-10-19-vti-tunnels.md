@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Ditch the ACL on the Legacy Crypto VPN
-tags: [ crypto, ipsec, security, vpn, tunneling ]
-img: /assets/oldwaynewway.png
+tags: [ crypto, ipsec, cisco, vpn, tunneling ]
 ---
 
+VTI configuration steps.
 ![oldnewway](/assets/vti-oldwaynewway.jpg)
 
 One of our clients had ran into an interesting issue where they were unable to setup multiple GRE tunnels with IPSEC encryption to two different destinations while having the same source interface.

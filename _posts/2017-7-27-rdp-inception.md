@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Tired of remote desktop-ception? Try this quick trick!
-date: 2017-7-27 12:00:00 -0500
 tags: [ ssh, rdp, security, tunneling ]
-img: https://raw.githubusercontent.com/TekRx/tekrx.github.io/master/assets/tunnel0.png
 ---
 
+SSH tunnel simplified.
 ![Remote Desktop Inception](/assets/tunnel0.png)
 
 A friend of mine was sharing about his experience of using remote desktop to connect to a server, then connecting to yet another server with remote desktop to access the information he needs. This is a silly way of connecting to the remote server and can be vulnerable to exploitation.
