@@ -4,6 +4,7 @@ title: Web trackers exploit browser login managers
 tags: [ security, browser, password ]
 ---
 
+
 Interesting article about web trackers exploiting browser login managers stealing your email and passwords easily.
 
 ![image](/assets/weblogin.png)
