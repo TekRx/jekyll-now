@@ -79,7 +79,7 @@ gems:
   - jekyll-redirect-from
   - amp-jekyll
 
-ampdir: /_posts/
+ampdir: /amp-jekyll
 
 # Exclude these files from your production _site
 exclude:
