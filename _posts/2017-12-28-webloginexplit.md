@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Web trackers exploit browser login managers
-subtitle: test
 tags: [ security, browser, password ]
 img: /assets/weblogin.png
 ---
 
-
 Interesting article about web trackers exploiting browser login managers stealing your email and passwords easily.
 
+![image](/assets/weblogin.png)
 
 **_TL;DR_**
 
