@@ -27,6 +27,12 @@ Although there are multiple options that we can use to resolve this issue, such 
 
 < insert comparison >
 
+| Legacy Crypto | Virtual Tunnel Interface |
+| --- | --- | --- |
+| `crypto keyring KEYRING-SPOKE1` <br> `local-address 10.10.10.10` <br> `pre-shared-key address 30.30.30.30 key SECRETKEY`<br> `!` <br> `crypto isakmp profile ISAKMP-Profile-Spoke1` <br> `keyring KEYRING-SPOKE1` <br> `match identity address 30.30.30.30 255.255.255.0` <br> `local-address 10.10.10.10` <br> `!` <br> `crypto ipsec transform-set TRSET esp-3des esp-md5-hmac`<br> `mode transport` <br> `!` <br> `crypto map MYMAP 10 ipsec-isakmp` <br> `set peer 30.30.30.30` <br> `set transform-set TRSET` <br> `set isakmp-profile ISAKMP-Profile-Spoke1` <br> `match address MYMAP_ACL` <br> `!` <br> `ip access-list extended MYMAP_ACL` <br> `permit gre host 10.10.10.10 host 30.30.30.30` <br> `!` <br> `interface GigabitEthernet0/0/0` <br> `description *** Outside Interface ***` <br> `ip address 10.10.10.10 255.255.255.0` <br> `crypto map MYMAP` <br> `!` <br> `interface Tunnel1` <br> `description *** Tunnel to SPOKE1 ***` <br> `ip address 169.254.40.253 255.255.255.252` <br> `ip mtu 1400` <br> `ip tcp adjust-mss 1360` <br> `tunnel source 10.10.10.10` <br> `tunnel destination 30.30.30.30` <br> <br> <br> <br> | `crypto keyring KEYRING-SPOKE1` <br> `local-address 10.10.10.10` <br> `pre-shared-key address 30.30.30.30 key SECRETKEY` <br> `!` <br> `crypto isakmp profile ISAKMP-Profile-Spoke1` <br> `keyring KEYRING-SPOKE1` <br> `match identity address 30.30.30.30 255.255.255.0` <br> `local-address 10.10.10.10` <br> `!` <br> `crypto ipsec transform-set TRSET esp-3des esp-md5-hmac` <br> `mode transport` <br> `!` <br> `crypto ipsec profile IPSEC-Profile-Spoke1` <br> <br> `set transform-set TRSET` <br> `set isakmp-profile ISAKMP-Profile-Spoke1` <br> `!` <br> `!` <br> `!` <br> `!` <br> `!` <br> `!` <br> `!` <br> `!` <br> `!` <br> `!` <br> `interface Tunnel1` <br> `description *** Tunnel to SPOKE1 ***` <br> `ip address 169.254.40.253 255.255.255.252` <br> `ip mtu 1400` <br> `ip tcp adjust-mss 1360` <br> `tunnel source 10.10.10.10` <br> `tunnel mode ipsec ipv4` <br> `tunnel destination 30.30.30.30` <br> `tunnel protection ipsec profile IPSEC-Profile-Spoke1` 
+
+
+
 #### Diagram for illustration:
 
 ![diagram](/assets/vti-diagram.png)
