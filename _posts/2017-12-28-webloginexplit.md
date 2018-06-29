@@ -14,4 +14,4 @@ Interesting article about web trackers exploiting browser login managers stealin
 3rd party scripts on websites can extract saved passwords from your browser's password manager without user intervention (depending on browser).
 Countermeasures include: separate domain for signon, install adblocker, disable login autofill, etc.
 
-![Link to original article](https://freedom-to-tinker.com/2017/12/27/no-boundaries-for-user-identities-web-trackers-exploit-browser-login-managers/)
+[Link to original article](https://freedom-to-tinker.com/2017/12/27/no-boundaries-for-user-identities-web-trackers-exploit-browser-login-managers/)
