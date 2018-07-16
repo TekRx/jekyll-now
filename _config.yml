@@ -25,7 +25,7 @@ footer-links:
   flickr:
   github:
   instagram:
-  linkedin: company/tekrx/
+  linkedin: 
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
@@ -91,4 +91,4 @@ exclude:
   - README.md
   - CNAME
 
-theme: 
+theme:
