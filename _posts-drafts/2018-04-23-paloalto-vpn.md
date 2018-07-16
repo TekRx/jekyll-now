@@ -2,9 +2,12 @@
 layout: post
 title: Palo Alto VPN configuration
 tags: [ pan, vpn, configuration, paloalto ]
+excerpt_separator: <!--more-->
 ---
 
 Straight Forward configuration of a VPN tunnel on Palo Alto
+
+<!--more-->
 
 ## Checklist for configuration
 - Network
