@@ -4,6 +4,7 @@
 
 # Name of your site (displayed in the header)
 name: TekRx Solutions
+title: TekRx Solutions
 
 # Short bio or description (displayed in the header)
 description: Technological solutions prescribed to your business
@@ -14,6 +15,7 @@ avatar: https://raw.githubusercontent.com/TekRx/tekrx.github.io/master/images/Te
 #
 # Flags below are optional
 #
+show_downloads: false
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -23,7 +25,7 @@ footer-links:
   flickr:
   github:
   instagram:
-  linkedin: https://www.linkedin.com/company/tekrx/
+  linkedin: company/tekrx/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
