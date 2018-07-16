@@ -2,11 +2,14 @@
 layout: post
 title: Tired of remote desktop-ception? Try this quick trick!
 tags: [ ssh, rdp, security, tunneling ]
+excerpt_separator: <!--more-->
 ---
 
 SSH tunnel simplified. How to setup SSH tunnel or proxying on Mac and PC.
 
 ![Remote Desktop Inception](/assets/tunnel0.png)
+
+<!--more-->
 
 A friend of mine was sharing about his experience of using remote desktop to connect to a server, then connecting to yet another server with remote desktop to access the information he needs. This is a silly way of connecting to the remote server and can be vulnerable to exploitation.
 
