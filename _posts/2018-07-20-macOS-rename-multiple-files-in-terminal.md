@@ -19,9 +19,9 @@ Output will be something like this:
 
 <!--more-->
 
-```
+```bash
 [user@Macbook:~]$rename -nvs "IMG_" "" *
-Using expression: sub { use feature ':5.18'; s/\Q${\"IMG_2"}/2/ }
+Using expression: sub { use feature ':5.18'; s/\Q${\"IMG_"}// }
 '20180713_Myimage.jpg' unchanged
 '20180716_someotherimage.jpg' unchanged
 '20180717_yetanotherimage.jpg' unchanged
@@ -39,7 +39,7 @@ In order to actually change the names, remove `n` from `-nvs` and you're good to
 
 Output of the command in the directory:
 
-```
+```bash
 [user@Macbook:~]$rename -vs "IMG_" "" *
 'IMG_20180712_223021.jpg' renamed to '20180712_223021.jpg'
 'IMG_20180712_223043.jpg' renamed to '20180712_223043.jpg'
