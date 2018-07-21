@@ -7,8 +7,6 @@ excerpt_separator: <!--more-->
 
 Quickly rename multiple files using terminal in macOS using rename
 
-<!--more-->
-
 Install the `rename` utility
 
 `brew install rename`
@@ -18,6 +16,9 @@ In the directory that you're in, do the following (quotes are optional):
 `rename -nvs "<searchtext>" "<renamedtext>" *`
 
 Output will be something like this:
+
+<!--more-->
+
 ```
 [user@Macbook:~]$rename -nvs "IMG_" "" *
 Using expression: sub { use feature ':5.18'; s/\Q${\"IMG_2"}/2/ }
