@@ -7,6 +7,8 @@ excerpt_separator: <!--more-->
 
 Mounting NFS through Palo Alto
 
+
+
 <!--more-->
 Similarly to the Palo Alto VPN configuration, setting up a VPN between Palo Alto and an AWS CSR router, there will only be minor changes required.
 
