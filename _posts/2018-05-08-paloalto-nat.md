@@ -54,7 +54,7 @@ _Note: This is a simple example of two zones. If you are exposing a device to th
 4. Check the box `Destination Address Translation` and in the drop down, select the destination server. In this case, I want users from the Internet to be able to access "my internal server"
 ![Translated Packet](/assets/paloalto/nat/inboundnat3.jpg)
 5. Inbound NAT policy completed
-![Finished Default NAT](/assets/paloalto/nat/inboundtnat4.jpg)
+![Finished Default NAT](/assets/paloalto/nat/inboundnat4.jpg)
 
 # Bi-directional NAT
 
