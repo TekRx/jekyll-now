@@ -12,12 +12,16 @@ Covers:
 - Inbound NAT (Outside > Inside)
 - Bidirectional NAT (Outside > Inside or Inside > Outside)
 
+![NAT Summary Diagram](/assets/paloalto/nat/natsummary.jpg)
+
 <!--more-->
 
 IMPORTANT: Please remember to add approrpiate policies to permit traffic between Zones. Example for Inbound NAT: Allow Untrust Zone to have acess to Trust Zone from Any IP to Specfic Server IP address and any associated applications/ports.
 
 # Default/Dynamic NAT
 This nat configuration will NAT the entire LAN network to a singular IP address when going out to the Internet.
+
+![NAT Default/Dynamic](/assets/paloalto/nat/defaultnat.jpg)
 
 1. Navigate to `Policies` > `NAT` then click the `+ADD` button at the bottom
 ![NAT Page](/assets/paloalto/nat/defaultnat0.jpg)
@@ -38,6 +42,8 @@ This nat configuration will NAT the entire LAN network to a singular IP address 
 
 This NAT configuration allows users from the Internet to hit a public IP address and the traffic would be routed to your desired server. An example of this would be hosting a webpage in your network and allowing clients from the internet to connect to it.
 
+![NAT Default/Dynamic](/assets/paloalto/nat/inboundnat.jpg)
+
 1. Navigate to `Policies` > `NAT` then click the `+ADD` button at the bottom
 ![NAT Page](/assets/paloalto/nat/defaultnat0.jpg)
 2. Enter Name of Inbound NAT Policy
@@ -50,9 +56,11 @@ _Note: This is a simple example of two zones. If you are exposing a device to th
 5. Inbound NAT policy completed
 ![Finished Default NAT](/assets/paloalto/nat/inboundtnat4.jpg)
 
-# Bidirectional NAT
+# Bi-directional NAT
 
 This NAT configuration allows access to an internal server to a designated Internet IP and in the same way, the traffic going out to the Internet from that internal server, appears as the same designated Internet IP.
+
+![NAT Default/Dynamic](/assets/paloalto/nat/bidirnat.jpg)
 
 1. Navigate to `Policies` > `NAT` then click the `+ADD` button at the bottom
 ![NAT Page](/assets/paloalto/nat/defaultnat0.jpg)
@@ -64,3 +72,13 @@ This NAT configuration allows access to an internal server to a designated Inter
 ![Translated Packet](/assets/paloalto/nat/bidirnat3.jpg)
 5. Bidirectional NAT policy completed
 ![Finished Default NAT](/assets/paloalto/nat/bidirnat4.jpg)
+
+
+
+Hopefully this has helped you understand NAT on the Palo Alto better.
+
+If you find any errors or have suggestions to improve this article, please feel free to contact Jon at <blog@tekrx.ca>
+
+---
+
+_All applications mentioned in this article are not endorsed by TekRx Solutions and are to be used at your own discretion. TekRx Solutions does not take responsibility for any liability in the use of any application mentioned in the article._
