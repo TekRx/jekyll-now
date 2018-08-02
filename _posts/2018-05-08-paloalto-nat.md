@@ -28,10 +28,10 @@ This nat configuration will NAT the entire LAN network to a singular IP address 
 2. Enter Name of Default NAT Policy
 ![General](/assets/paloalto/nat/defaultnat1.jpg)
 3. Fill in Source Zone, Destination Zone, Destination Interface, Source Addresses
-  1. *Source Zone: Zone* which traffic will originate
-  2. *Destination Zone*: Zone which traffic will go to
-  3. *Destination Interface*: Interface which traffic will go to
-  4. *Source Address*: IP or Subnet that of which initiates the traffic
+    1. *Source Zone: Zone* which traffic will originate
+    2. *Destination Zone*: Zone which traffic will go to
+    3. *Destination Interface*: Interface which traffic will go to
+    4. *Source Address*: IP or Subnet that of which initiates the traffic
 ![Original Packet](/assets/paloalto/nat/defaultnat2.jpg)
 4. Under Source Address Translation, select in the dropdown `Dynamic IP and Port` and add the desired IP address
 ![Translated Packet](/assets/paloalto/nat/defaultnat3.jpg)
