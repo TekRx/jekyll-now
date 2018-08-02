@@ -19,7 +19,7 @@ Covers:
 IMPORTANT: Please remember to add approrpiate policies to permit traffic between Zones. Example for Inbound NAT: Allow Untrust Zone to have acess to Trust Zone from Any IP to Specfic Server IP address and any associated applications/ports.
 
 ## Default/Dynamic NAT
-This nat configuration will NAT the entire LAN network to a singular IP address when going out to the Internet.
+This nat configuration will NAT the entire LAN network [_192.168.1.10/24_] to a singular IP address [_20.20.20.20_] when going out to the Internet.
 
 ![NAT Default/Dynamic](/assets/paloalto/nat/defaultnat.jpg)
 
@@ -40,7 +40,7 @@ This nat configuration will NAT the entire LAN network to a singular IP address 
 
 ## Inbound NAT
 
-This NAT configuration allows users from the Internet to hit a public IP address and the traffic would be routed to your desired server. An example of this would be hosting a webpage in your network and allowing clients from the internet to connect to it.
+This NAT configuration allows users from the Internet to hit a public IP address [_30.30.30.30_] and the traffic would be routed to your desired server[_192.168.1.10_]. An example of this would be hosting a webpage in your network and allowing clients from the internet to connect to it.
 
 ![NAT Default/Dynamic](/assets/paloalto/nat/inboundnat.jpg)
 
@@ -58,7 +58,7 @@ _Note: This is a simple example of two zones. If you are exposing a device to th
 
 ## Bi-directional NAT
 
-This NAT configuration allows access to an internal server to a designated Internet IP and in the same way, the traffic going out to the Internet from that internal server, appears as the same designated Internet IP.
+This NAT configuration allows access to an internal server [_192.168.1.10_] to a designated Internet IP [_40.40.40.40_] and in the same way, the traffic going out to the Internet from that internal server, appears as the same designated Internet IP.
 
 ![NAT Default/Dynamic](/assets/paloalto/nat/bidirnat.jpg)
 
