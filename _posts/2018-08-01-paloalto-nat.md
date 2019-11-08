@@ -8,9 +8,9 @@ excerpt_separator: <!--more-->
 5 Step configuration of a NAT on Palo Alto
 
 Covers:
-- Default/Dynamic NAT (Inside > Outside)
-- Inbound NAT (Outside > Inside)
-- Bidirectional NAT (Outside > Inside or Inside > Outside)
+- Default/Dynamic NAT (Inside > Outside) - [Many to One]
+- Inbound NAT (Outside > Inside) - [One to One]
+- Bidirectional NAT (Outside > Inside or Inside > Outside) - [One to One]
 
 ![NAT Summary Diagram](/assets/paloalto/nat/natsummary.jpg)
 
