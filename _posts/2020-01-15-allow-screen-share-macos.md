@@ -10,11 +10,11 @@ To allow Screen Sharing for you or others to connect to your mac remotely, you c
 ## Steps to enable screen sharing
 
 1. Open Spotlight and type in `System Preferences` or top left click the `Apple icon` and go to `System Preferences`
-  1. ![System Preferences](/blog/images/2020-01-15-ScreenShare-1.png)
+  1. ![System Preferences](/blog/assets/2020-01-15-ScreenShare-1.png)
 2. Click `Sharing`
-  1. ![Sharing](/blog/images/2020-01-15-ScreenShare-2.png)
+  1. ![Sharing](/blog/assets/2020-01-15-ScreenShare-2.png)
 3. Check the box beside `Screen Sharing`
-  1. ![Check Screen Sharing](/blog/images/2020-01-15-ScreenShare-3.png)
+  1. ![Check Screen Sharing](/blog/assets/2020-01-15-ScreenShare-3.png)
 4. Done!
 
 ## How to connect from remote machine
