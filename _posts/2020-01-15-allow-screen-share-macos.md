@@ -17,6 +17,8 @@ To allow Screen Sharing for you or others to connect to your mac remotely, you c
   1. ![Check Screen Sharing](/assets/2020-01-15-ScreenShare-3.png)
 4. Done!
 
+<!--more-->
+
 ## How to connect from remote machine
 
 Assuming you're on the same network, or if you already have port forwarding setup (port 5900) you can connect in two ways.
