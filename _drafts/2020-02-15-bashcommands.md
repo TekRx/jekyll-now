@@ -5,13 +5,12 @@ tags: [ bash, github, alias, screensharing, macos ]
 excerpt_separator: <!--more-->
 ---
 
-Here are five useful bash aliases to help with multi command repeated tasks
+So much to do, so little time. These four bash tricks should help improve that efficiency!
 
 1. Running Bash commands in Subshell
 2. Alias to pull/update multiple GitHub projects without changing current directory
 3. Bash Repeat a Command x times
 4. Open Screen Sharing (macos) from command line
-
 
 <!--more-->
 
@@ -69,6 +68,8 @@ Enter passphrase for key 'myproject4privatekey':
 Already up to date.
 ```
 
+**BONUS:** If you're feeling really brave and have your computer on all the time, you can setup a `Cron Job` to run in the dead of night to keep all your projects up to date.
+
 ### Scenario 2 - Update multiple GitHub projects
 I've updated multiple GitHub projects. Now I need to update all of them instead of going into each folder to update.
 
@@ -119,6 +120,7 @@ Say you want to quickly update only your current project. Set this up in your `.
 **What this does:**
 1. A `Git Diff`
 2. Asks you for validation (if valid press `y`)
+  1. Note: if the diff is more than 1 page, at the end you can press `q` to get the validation prompt
 3. Pushes changes out to GitHub
 
 ```bash
@@ -145,7 +147,32 @@ gitquick() {
 `gitquick "thisismycomment"`
 
 **Output:**
+```bash
+[jon@macos:~/mygitrepofolder]gitquick "thisismycomment"
+diff --git a/folder/fileupdate.txt b/folder/fileupdate.txt
+index h623gsa..a3g2g2 100644
+--- a/folder/fileupdate.txt
++++ b/folder/fileupdate.txt
+@@ -1,7 +1,7 @@
 
+<-- output ommitted -->
+
+Will commit with comment: thisismycomment
+Is this ok? (y/n) y
+[master 42hjak7] thisismycomment
+ 1 file changed, 71 insertions(+), 6 deletions(-)
+Enter passphrase for key 'myproject1privatekey':
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.33 KiB | 1.33 MiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:project/project.git
+   7syerh3..42hjak7  master -> master
+[jon@macos:~/mygitrepofolder]
+```
 
 ## 3. Bash Repeat a Command x times
 
