@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Five useful bash tricks!
-tags: [ bash, github, alias ]
+title: Four useful bash tricks!
+tags: [ bash, github, alias, screensharing, macos ]
 excerpt_separator: <!--more-->
 ---
 
@@ -10,8 +10,8 @@ Here are five useful bash aliases to help with multi command repeated tasks
 1. Running Bash commands in Subshell
 2. Alias to pull/update multiple GitHub projects without changing current directory
 3. Bash Repeat a Command x times
-4.
-5.
+4. Open Screen Sharing (macos) from command line
+
 
 <!--more-->
 
@@ -112,13 +112,48 @@ Enter passphrase for key 'myproject2privatekey':
 Everything up-to-date
 ```
 
+### Scenario 3 - Quick update of your current projects
+
+Say you want to quickly update only your current project. Set this up in your `.bashrc` or `.bash_profile` as a bash function.
+
+**What this does:**
+1. A `Git Diff`
+2. Asks you for validation (if valid press `y`)
+3. Pushes changes out to GitHub
+
+```bash
+gitquick() {
+        git diff;
+        echo ""
+        echo "Will commit with comment:" $@
+        read -p "Is this ok? (y/n) " input
+        if [[ $input == 'y' ]]
+        then
+          git add .;
+          git commit -m "$@" ;
+          git push ;
+        else
+          echo "Cancelled"
+        fi
+}
+```
+
+**Syntax:**
+`gitquick "<your comment when committing>"`
+
+**Example:**
+`gitquick "thisismycomment"`
+
+**Output:**
+
+
 ## 3. Bash Repeat a Command x times
 
 Often I find myself looking to check something several times in a short period of time. I'd send a command, get a result, press up, press enter, and do it several more times until I see a trend in what I'm looking for. This becomes tedious especially when I need to do this several times. Here are 2 quick methods to solving this problem.
 
 _Note:_ I had added in a pause in case the command you run would look like a DOS (Denial of Service) attack. I had accidentally done this by accident and triggered a temporary ban on my IP address. Oops. :P
 
-### Method 1:
+### Method 1 - Run in single line
 **Syntax:**
 `for i in {1..<number of iterations>}; do <command>; sleep 0.5; done`
 
@@ -140,7 +175,7 @@ asdf
 ```
 
 
-### Method 2:
+### Method 2 - Run as an alias
 Add into `.bashrc` (linux) or `.bash_profile` (macos)
 
 ```bash
@@ -173,6 +208,36 @@ run() {
 'asdf'
 ```
 
+## 4. Open Screen Sharing (macos) from command line
+
+Okok, this isn't really a bash trick, but rather using a bash alias to map to a user/password for a particular host.
+_**NOTE:** It is not recommended for you to program your username/password into bash, as it becomes a security risk. I have included it as such for educational purposes._
+
+### Method 1 - Direct on bash
+
+**Syntax (Safe)** `open vnc://<username>:@<remotehost>` <-- This opens Screen Sharing with username pre-filled and has a password prompt.
+
+**Syntax (NOT Safe)** `open vnc://<username>:<password>@<remotehost>` <-- This opens Screen Sharing without password prompt.
+
+
+**Example (Safe):** `open vnc://jtsui@192.168.1.10`
+
+**Example (NOT Safe):** `open vnc://jtsui:mysecretpassword@192.168.1.10`
+
+
+
+### Method 2 - Run as Alias
+
+Basically the same as running in bash, except you are adding `alias <aliasname>=` and putting the command in single quotes (`' '`)
+
+**Syntax (Safe)** `alias <aliasname>='open vnc://<username>:@<remotehost>'` <-- This has password prompt
+
+**Syntax (NOT Safe)** `alias <aliasname>='open vnc://<username>:<password>@<remotehost>'` <-- No password prompt
+
+
+**Example (Safe):** `alias remotehostscreenshare='open vnc://jtsui@192.168.1.10'`
+
+**Example (NOT Safe):** `alias remotehostscreenshare='open vnc://jtsui:mysecretpassword@192.168.1.10'`
 
 
 If you find any errors or have suggestions to improve this article, please feel free to contact Jon at <blog@tekrx.ca>
