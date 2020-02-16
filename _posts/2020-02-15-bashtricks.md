@@ -240,6 +240,8 @@ run() {
 Okok, this isn't really a bash trick, but rather using a bash alias to map to a user/password for a particular host.
 _**NOTE:** It is not recommended for you to program your username/password into bash, as it becomes a security risk. I have included it as such for educational purposes._
 
+If you need to enable screen share for the first time, [check out a previous post](enablescreenshare) for steps to enable screen sharing!
+
 ### Method 1 - Direct on bash
 
 **Syntax (Safe)** `open vnc://<username>:@<remotehost>` <-- This opens Screen Sharing with username pre-filled and has a password prompt.
@@ -276,3 +278,4 @@ _All applications mentioned in this article are not endorsed by TekRx Solutions
 
 
 [whatissubshell]: https://bash.cyberciti.biz/guide/What_is_a_Subshell%3F
+[enablescreenshare]: https://blog.tekrx.ca/allow-screen-share-macos/
